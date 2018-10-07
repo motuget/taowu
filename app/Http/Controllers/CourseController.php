@@ -6,12 +6,12 @@ class CourseController extends Controller
 {
     public function index()
     {
-        return '123';
+        return view('course');
     }
 
     public function create()
     {
-        
+
     }
 
     public function store()
