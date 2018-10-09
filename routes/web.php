@@ -12,6 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '';
 });
 Route::resource('course', 'CourseController');
+Route::get('login', 'ManageController@login');
+Route::resource('manage', 'ManageController');

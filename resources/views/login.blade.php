@@ -10,13 +10,17 @@
     </head>
     <body>
         <div class="container">
-            <div class="media py-3" style="border-bottom:1px solid #eee;">
-                <img class="mr-3" src="" alt="" style="width:64px;height:64px;">
-                <div class="media-body">
-                    <h5>Medis heading</h5>
-                    <span>射点发我。</span>
-                </div>
-                <a href="#" class="btn btn-primary text-left">加入</a>
+            <div class="col-4 offset-4 mt-5">
+                <form class="" action="manage" method="post">
+                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="num">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="pwd">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">login</button>
+                </form>
             </div>
         </div>
 

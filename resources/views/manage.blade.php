@@ -10,14 +10,12 @@
     </head>
     <body>
         <div class="container">
-            <div class="media py-3" style="border-bottom:1px solid #eee;">
-                <img class="mr-3" src="" alt="" style="width:64px;height:64px;">
-                <div class="media-body">
-                    <h5>Medis heading</h5>
-                    <span>射点发我。</span>
-                </div>
-                <a href="#" class="btn btn-primary text-left">加入</a>
-            </div>
+            <table>
+                <tr>
+                    <th>#</th>
+                </tr>
+                
+            </table>
         </div>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
