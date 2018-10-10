@@ -10,11 +10,31 @@
     </head>
     <body>
         <div class="container">
-            <table>
-                <tr>
-                    <th>#</th>
-                </tr>
-                
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>图标</th>
+                        <th>标题</th>
+                        <th>摘要</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach($course as $courses)
+                    <tr>
+                        <th>{{ $courses->id }}</th>
+                        <td>{{ $courses->img }}</td>
+                        <td>{{ $courses->title }}</td>
+                        <td>{{ $courses->content }}</td>
+                        <td>
+                            <a href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                        </td>
+                    </tr>
+                    @endforeach
+                </tbody>
             </table>
         </div>
 
