@@ -1,12 +1,14 @@
 <?php
 
 namespace App\Http\Controllers;
+use Illuminate\Support\Facades\DB;
 
 class CourseController extends Controller
 {
     public function index()
     {
-        return view('course');
+        $course = DB::table('course')->get();
+        return view('course', ['course'=>$course]);
     }
 
     public function create()
